@@ -81,11 +81,9 @@ This project recreates the professional LinkedIn user experience with modern UI 
 
 ## Home Page
 
-![Home](./screenshots/home.png)
+![Home](./src/assets/screenshots/home.png)
 
-## Premium Page
-
-![Premium](./screenshots/premium.png)
+![Premium](./src/assets/screenshots/premium.png)
 
 ---
 
