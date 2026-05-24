@@ -159,7 +159,7 @@ src/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/linkedin-clone.git
+git clone https://github.com/CodeWithHasen/linkedin-clone.git
 ```
 
 ## Navigate to Project
