@@ -1,0 +1,183 @@
+.profile-page {
+    padding: 20px 0;
+
+    .profile-cover-card {
+        overflow: hidden;
+        border-radius: 16px;
+
+        .cover-image {
+            height: 220px;
+            background: linear-gradient(135deg, #0a66c2, #004182);
+        }
+
+       .profile-info-wrapper {
+            padding: 0 30px 30px;
+            position: relative;
+        }
+
+        .profile-image {
+            margin-top: -72px;
+
+            img {
+                width: 150px;
+                height: 175px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 1px solid #ddd;
+                background: #fff;
+            }
+        }
+
+        .profile-content {
+            margin-top: 20px;
+        }
+
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 6px;
+            }
+
+            h5 {
+                color: #444;
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .location {
+                color: #666;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .connections {
+                color: #0a66c2;
+                font-weight: 600;
+                margin-top: 8px;
+            }
+        }
+
+        .profile-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 20px;
+
+            a {
+                text-decoration: none;
+                color: #0a66c2;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-text {
+        color: #444;
+        line-height: 1.8;
+    }
+
+    .experience-item,
+    .education-item {
+        h5 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .company {
+            color: #0a66c2;
+            font-weight: 600;
+        }
+
+        span {
+            color: #777;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    .skills-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .skill-badge {
+        padding: 10px 18px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .primary {
+        background: #0d6efd;
+    }
+
+    .dark {
+        background: #111827;
+    }
+
+    .success {
+        background: #16a34a;
+    }
+
+    .warning {
+        background: #f59e0b;
+    }
+
+    .info {
+        background: #0891b2;
+    }
+
+    .secondary {
+        background: #6b7280;
+    }
+
+    .danger {
+        background: #dc2626;
+    }
+}
+
+@media(max-width: 768px) {
+    .profile-page {
+        .profile-header {
+            flex-direction: column;
+        }
+
+        .profile-image img {
+            width: 120px !important;
+            height: 120px !important;
+        }
+
+        .profile-header h2 {
+            font-size: 24px !important;
+        }
+
+        .profile-header h5 {
+            font-size: 16px !important;
+        }
+    }
+}

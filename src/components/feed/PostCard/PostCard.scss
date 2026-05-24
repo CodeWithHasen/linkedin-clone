@@ -1,0 +1,53 @@
+.post-card {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.post-profile-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.post-action-btn {
+    flex: 0 0 auto;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    padding: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    white-space: nowrap;
+
+    &:hover {
+        background: #f3f2ef;
+    }
+
+    svg {
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+}
+
+.liked-btn {
+    color: #0a66c2 !important;
+    font-weight: 600;
+}
+
+.disliked-btn {
+    color: #dc2626 !important;
+    font-weight: 600;
+}

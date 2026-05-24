@@ -1,0 +1,422 @@
+.linkedin-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+        gap: 20px;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex: 1;
+    }
+
+    .linkedin-logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        img {
+            width: 38px;
+            height: 38px;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    .search-box {
+        position: relative;
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 14px;
+            transform: translateY(-50%);
+            color: #666;
+            font-size: 14px;
+        }
+
+        input {
+            width: 380px;
+            height: 38px;
+            border: none;
+            outline: none;
+            border-radius: 16px;
+            background: #eef3f8;
+            padding-left: 42px;
+            font-size: 14px;
+            transition: 0.3s;
+
+            &:focus {
+                background: #fff;
+                border: 1px solid #0a66c2;
+            }
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #666;
+        font-size: 12px;
+        transition: 0.3s;
+        position: relative;
+        min-width: 70px;
+
+        &:hover {
+            color: #000;
+        }
+
+        span {
+            margin-top: 4px;
+            white-space: nowrap;
+        }
+    }
+
+    .active {
+        color: #000;
+        font-weight: 600;
+    }
+
+    .nav-icon {
+        font-size: 22px;
+    }
+
+    .icon-wrapper {
+        position: relative;
+    }
+
+    .notification-badge {
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #dc2626;
+        color: #fff;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-profile-img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #ddd;
+    }
+
+    .premium-nav {
+        color: #915907 !important;
+
+        i {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 11px;
+            text-align: center;
+            line-height: 1.2;
+            max-width: 70px;
+            white-space: normal;
+        }
+
+        &:hover {
+            color: #6e4606 !important;
+        }
+    }
+
+    .profile-dropdown {
+        .profile-btn {
+            border: none !important;
+            background: transparent !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: #0a66c2;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &::after {
+                margin-left: 4px;
+            }
+        }
+
+        .profile-btn-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .profile-btn-wrapper span {
+            font-size: 12px;
+            margin-top: 4px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .header-profile-img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 2px solid #ddd;
+        }
+
+        .me-text-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 4px;
+        }
+
+        .me-text {
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .me-dropdown-icon {
+            font-size: 10px;
+            color: #666;
+            margin-top: 1px;
+        }
+
+        .profile-btn::after {
+            display: none !important;
+        }
+
+        .dropdown-menu {
+            width: 340px;
+            border-radius: 14px;
+            border: 1px solid #e0e0e0;
+            padding: 0;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .dropdown-header {
+            padding: 18px;
+            background: linear-gradient(135deg, #0a66c2, #004182);
+            color: #fff;
+        }
+
+        .profile-top {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .profile-top img {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .profile-name {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .profile-name h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .verify-badge {
+            color: #0a66c2;
+            background: #fff;
+            border-radius: 50%;
+            font-size: 14px;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .profile-details p {
+            margin: 4px 0 0;
+            font-size: 12px;
+            line-height: 1.5;
+            word-break: breake-word;
+            white-space: normal;
+        }
+
+        .profile-top h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .profile-top p {
+            margin: 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .view-profile-btn {
+            width: 100%;
+            margin-top: 14px;
+            border: 1px solid #fff;
+            background: #fff;
+            color: #0a66c2;
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                background: #eaf4ff;
+                transform: translateY(-1px);
+            }
+        }
+
+        .dropdown-title {
+            padding: 10px 18px 4px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            font-weight: 700;
+        }
+
+        .dropdown-item {
+            padding: 10px 18px;
+            font-size: 14px;
+            color: #333;
+            transition: 0.3s ease;
+
+            &:hover {
+                background: #f3f6f8;
+                color: #0a66c2;
+                padding-left: 24px;
+            }
+        }
+
+        .dropdown-divider {
+            margin: 4px 0;
+        }
+
+    }
+
+    @keyframes fadeDropdown {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .linkedin-header {
+
+        .search-box input {
+            width: 180px;
+        }
+
+        .header-nav {
+            gap: 16px;
+        }
+
+        .nav-item span,
+        .profile-btn span {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .linkedin-header {
+
+        .search-box {
+            display: none;
+        }
+
+        .header-wrapper {
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+
+        .header-nav {
+            gap: 14px;
+        }
+
+        .nav-icon {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .linkedin-header {
+
+        .header-nav {
+            gap: 10px;
+        }
+
+        .nav-item {
+            min-width: 50px;
+        }
+
+        .nav-icon {
+            font-size: 18px;
+        }
+    }
+}

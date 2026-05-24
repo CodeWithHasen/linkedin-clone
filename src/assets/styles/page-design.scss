@@ -1,0 +1,52 @@
+.page-wrapper {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.page-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+}
+
+.page-card:hover {
+    transform: translateY(-3px);
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 12px;
+}
+
+.page-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    background: #f3f6f8;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+.info-box:hover {
+    background: #eaf4ff;
+}
+
+.info-box h5 {
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.info-box p {
+    margin: 0;
+    color: #666;
+}

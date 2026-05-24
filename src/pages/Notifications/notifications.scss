@@ -1,0 +1,253 @@
+.notifications-page {
+    padding: 20px 0;
+
+    .card {
+        border-radius: 16px;
+    }
+
+    .notification-sidebar {
+        padding: 24px;
+
+        .profile-section {
+
+            img {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 16px;
+            }
+
+            h5 {
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #555;
+                line-height: 1.7;
+            }
+
+            span {
+                color: #777;
+                font-size: 14px;
+            }
+
+            .profile-name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                margin-top: 12px;
+            }
+
+            .profile-name h5 {
+                margin: 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            .verify-badge {
+                color: #0a66c2;
+                background: #fff;
+                border-radius: 50%;
+                font-size: 14px;
+                width: 18px;
+                height: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+        }
+
+        .sidebar-links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            button {
+                border: none;
+                background: transparent;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 15px;
+                color: #333;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #0a66c2;
+                }
+            }
+        }
+    }
+
+    .windows-app-card {
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h5 {
+            font-weight: 700;
+        }
+
+        p {
+            margin: 6px 0 0;
+            color: #666;
+        }
+
+        button {
+            border-radius: 30px;
+            padding: 10px 24px;
+        }
+    }
+
+    .notification-tabs {
+        margin-top: 20px;
+        padding: 16px;
+        display: flex;
+        gap: 14px;
+
+        button {
+            border: none;
+            background: #eef3f8;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+
+        .active {
+            background: #0a66c2;
+            color: white;
+        }
+    }
+
+    .notification-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .notification-item {
+        padding: 20px;
+        display: flex;
+        gap: 16px;
+        transition: 0.3s;
+
+        &:hover {
+            background: #f9fafb;
+        }
+
+        &.unread {
+            border-left: 4px solid #0a66c2 !important;
+        }
+
+        .notification-left {
+
+            img {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .notification-content {
+            flex: 1;
+
+            h6 {
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            p {
+                color: #444;
+                line-height: 1.7;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 13px;
+                color: #777;
+            }
+        }
+
+        .notification-right {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 20px;
+            color: #666;
+
+            .dot {
+                color: #0a66c2;
+                font-size: 28px;
+            }
+        }
+    }
+
+    .ads-card {
+        padding: 24px;
+        text-align: center;
+
+        .promoted {
+            font-size: 13px;
+            color: #777;
+        }
+
+        .company-logo {
+            width: 180px;
+            margin: 20px auto 0;
+            display: block;
+        }
+
+        h5 {
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 12px;
+        }
+
+        .follow-btn {
+            border-radius: 30px;
+            padding: 10px 26px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+
+    .notifications-page {
+
+        .windows-app-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+
+    .notifications-page {
+
+        .notification-item {
+            flex-direction: column;
+        }
+
+        .notification-right {
+            justify-content: flex-end;
+        }
+
+        .notification-tabs {
+            overflow-x: auto;
+        }
+    }
+}
